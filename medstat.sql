@@ -36,11 +36,6 @@ GROUP BY
     "year"
 order by "year";
 
--- сравнение смертности с предыдущим годом 
- select year, mortality, lag(mortality) over() as смертность_прошлого_года
- from tub t 
- order by "year";
-
 -- сравнение количества впервые заболевших и смертей
 SELECT 
     year,
